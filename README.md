@@ -1,7 +1,7 @@
 # MJPizzeriaUI
 UI portion of Mario &amp; Joe's Pizzeria
 
-1. Install nodejs: https://nodejs.org/en/
+1. Install https://nodejs.org/en/
 2. Run npm install -g @angular/cli
 3. Clone this repo
 4. Run npm install
