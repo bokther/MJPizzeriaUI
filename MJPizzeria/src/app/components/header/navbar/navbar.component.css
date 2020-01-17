@@ -8,7 +8,7 @@
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 3%;
     width: 100%;
 }
 
@@ -26,7 +26,17 @@ nav ul {
 }
 
 img {
-    background-color: black;
-    max-width: 25%;
+    max-width: 50%;
     height: auto;
+}
+
+li {
+    color: white;
+    padding: 3%;
+    align-self: center;
+}
+
+li:hover {
+    color: rgb(255, 225, 57);
+    background-color: rgb(54, 54, 54);
 }
