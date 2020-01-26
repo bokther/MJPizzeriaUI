@@ -1,10 +1,12 @@
 <div class="container">
-    <img src="../../../../assets/images/Transparent logo.png" alt="logo" class="logo">
+    <a class="logoLink" routerLink="home">
+        <img src="../../../../assets/images/Transparent logo.png" alt="logo" class="logo">
+    </a>
     <nav>
         <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Menu</li>
+            <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="menu" routerLinkActive="active">Menu</a></li>
+            <li><a routerLink="about" routerLinkActive="active">About</a></li>
         </ul>
     </nav>
 </div>

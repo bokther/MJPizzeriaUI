@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/header/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CurrentHoursComponent } from './components/header/current-hours/current-hours.component';
+import { AboutComponent } from './components/about/about.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CurrentHoursComponent } from './components/header/current-hours/current
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    CurrentHoursComponent
+    CurrentHoursComponent,
+    AboutComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
