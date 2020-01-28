@@ -1,8 +1,17 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.logoLink {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 35%;
+    height: auto;
+    margin: 3%;
 }
 
 ul {
@@ -13,26 +22,12 @@ ul {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logoLink {
-    display: flex;
-    justify-content: center;
-}
-
-img {
-    max-width: 50%;
-    height: auto;
+    justify-content: space-evenly;
 }
 
 li {
