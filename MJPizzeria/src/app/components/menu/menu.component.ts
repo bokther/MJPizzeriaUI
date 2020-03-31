@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Category } from 'src/app/models/category';
+import { Item } from 'src/app/models/item';
+import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  categories: Category[];
+  items: Item[];
+  showContent: string = "";
+
+  constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
+    this.getCategories();
+  }
+
+  getCategories(): void {
+    this.categoryService.getCategories()
+      .subscribe(resp => this.categories = resp);
+  }
+
+  getItemsByCategory(cat_id: number): void {
+    this.categoryService.getItem(cat_id)
+      .subscribe(resp => this.items = resp);
+  }
+
+  toggleContent(category: string): void {
+      this.showContent = category;
   }
 
 }

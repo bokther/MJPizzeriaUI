@@ -1,1 +1,12 @@
-<p>menu works!</p>
+<div class="container">
+    <ul *ngIf="categories" class="categories">
+        <li *ngFor="let category of categories">
+            <a routerLink="./" (click)="getItemsByCategory(category.id)">{{ category.name }}</a>
+        </li>
+    </ul>
+    <div>
+        <ul *ngIf="items">
+            <li *ngFor="let item of items">{{ item.name }} {{ item.price / 100 | number:'1.2-2' }}</li>
+        </ul>
+    </div>
+</div>
