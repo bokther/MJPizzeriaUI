@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+li {
+    flex: 1;
+    list-style: none;
+}
